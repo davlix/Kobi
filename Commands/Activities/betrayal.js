@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js')
+const { EmbedBuilder } = require('discord.js')
 
 module.exports = {
     name: "betrayal",
@@ -10,7 +10,7 @@ module.exports = {
       }
         client.discordTogether.createTogetherCode(message.member.voice.channelId, 'betrayal').then(async(invite) => {
             
-            let embed = new MessageEmbed()
+            let embed = new EmbedBuilder()
             .setTitle("Betrayal.io")
             .setDescription(`[Klik disini](${invite.code}) Untuk akses Betrayal.io!\n\`\`\`\nNote: Fitur ini tidak tersedia untuk pengguna ponsel!\`\`\``)
             .setColor("GREEN")
