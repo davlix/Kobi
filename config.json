@@ -1,0 +1,12 @@
+{
+
+    "OWNER_ID":" UR DISCORD ID",
+    "BOT_TOKEN": "UR BOT TOKEN",
+    "tenorAPI":"TENOR KEY",
+    "DEFAULT_PREFIX":".",
+    "mongoPass": "MONGGODB SERVER",
+    "ERROR_LOGS_CHANNEL": "CHANNEL ID",
+    "YT_COOKIE": "YOUTUBE COOKIE"
+    
+}
+
