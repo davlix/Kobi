@@ -3,11 +3,11 @@ const Discord = module.require("discord.js");
 module.exports = {
   name: "respect",
   description: "Returns Random Respect GIF",
-  botPerms: ["EMBED_LINKS"],
+  botPerms: ["EmbedLinks"],
   run: async (client, message, args) => {
     const user = message.mentions.members.first();
     if (!user) {
-      return message.channel.send("Kamu perlu mention seseorang");
+      return message.channel.send("You need to mention someone");
     }
     var gif = [
       `https://media.tenor.com/images/0eb1f1ff68936dbde97bebfa4145e6f0/tenor.gif`,
@@ -22,10 +22,10 @@ module.exports = {
       `https://media.tenor.com/images/4363c864b009e851dacc13b259a9d75c/tenor.gif`,
       `https://media.tenor.com/images/d73aac94ff4e9b22a94a223ffd9ec651/tenor.gif`,
     ];
-    const embed = new Discord.MessageEmbed()
+    const embed = new Discord.EmbedBuilder()
       .setTitle(`${message.author.username} respects ${user.displayName}`)
       .setImage(`${gif[Math.floor(Math.random() * gif.length)]}`)
-      .setColor("RANDOM");
+      .setColor("Random");
 
     message.channel.send({embeds: [embed]});
   },
