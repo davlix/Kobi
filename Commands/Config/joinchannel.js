@@ -4,8 +4,8 @@ module.exports = {
   name: "joinchannel",
   description: "Ganti pesan welcome setiap server!",
   aliases: ["jchannel", "welcome"],
-  userPerms: ["MANAGE_CHANNELS"],
-  botPerms: ["MANAGE_CHANNELS"],
+  userPerms: ["ManageChannels"],
+  botPerms: ["ManageChannels"],
   run: async (client, message, args) => {
     if (!args[0]) {
       return message.channel.send(`\`Gunakan: .joinchannel <#channel|off>\``);

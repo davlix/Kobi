@@ -3,7 +3,7 @@ const prefixModel = require("../../database/guildData/prefix");
 module.exports = {
   name: "prefix",
   description: "Ganti Kode prefix setiap server!",
-  userPerms: ["MANAGE_GUILD"],
+  userPerms: ["ManageGuild"],
   run: async (client, message, args) => {
   
     const data = await prefixModel.findOne({

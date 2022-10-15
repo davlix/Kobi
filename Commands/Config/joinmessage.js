@@ -4,7 +4,7 @@ module.exports = {
   name: "joinmessage",
   description: "Ganti pesan masuk setiap server server!",
   aliases: ["joinmsg", "welcomemsg", "jmsg"],
-  userPerms: ["MANAGE_CHANNELS"],
+  userPerms: ["ManageChannels"],
   run: async (client, message, args) => {
     const text = args.join(" ");
     if (!args[0]) {

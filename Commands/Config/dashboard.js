@@ -3,8 +3,8 @@ const { MessageEmbed, MessageActionRow, MessageSelectMenu } = require('discord.j
 module.exports = {
     name: "dashboard",
     description: "Melihat dasbor untuk kategori yang diperlukan.",
-    botPerms: ["MANAGE_GUILD"],
-    userPerms: ["ADMINISITRATOR"],
+    botPerms: ["ManageGuild"],
+    userPerms: ["Administrator"],
     run: async(client, message, args)=>{
         if (!args[0]){
             return message.channel.send(`Please specify an option! Available Options:\`\`\`js\nadmin\nwelcomer\nlogging\n\`\`\``);
